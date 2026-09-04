@@ -9,7 +9,28 @@
     color: blue;
 }
 
+/* id class type(p,h1) *の順に優先される */
+/* 「親から継承した強いIDの指定」より「自分に直接指定された弱いclassの指定」が優先される */
+/* classが nこ あれば優先度は n */
+/* 優先度が大きい方が優先される */
+/* 優先度が一緒ならあとから書いたCSSが勝つ */
+/* インラインは上のどの要素よりも優先されるので、あとから管理しにくい */
+
+.subtitle-text{
+    color: rgb(255, 0, 234);
+}
+
+.subtitle-text{
+    color: rgba(177, 81, 64, 0.767) !important; /* これをつけると、優先度が一番高くなる */
+    /* !importantは強力な例外ルール。基本は乱用しない。 */
+}
+
 img{
     width: 300px;
     height: auto;
+}
+
+button{
+    background-color: #b43f3f;
+    color: #fff;
 }
