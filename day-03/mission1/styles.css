@@ -5,7 +5,7 @@
     /* marginやpaddingは必要に応じてリセットすればいい */
     /* padding:0; */
     /* margin:0; */
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     /* ウェブページ上のすべてのものは長方形のハコ */
 }
 
@@ -23,9 +23,9 @@
 
 /* id class type(p,h1) *の順に優先される */
 /* 「親から継承した強いIDの指定」より「自分に直接指定された弱いclassの指定」が優先される */
-/* classが nこ あれば優先度は n */
-/* 優先度が大きい方が優先される */
-/* 優先度が一緒ならあとから書いたCSSが勝つ */
+/* classが nこ あれば詳細度（セレクタの数）は n */
+/* 同じ階層なら詳細度が大きい方（セレクタの数の多い方）が優先される */
+/* 詳細度が一緒ならあとから書いたCSSが勝つ */
 /* インラインは上のどの要素よりも優先されるので、あとから管理しにくい */
 
 .subtitle-text{
@@ -33,7 +33,7 @@
 }
 
 .subtitle-text{
-    color: rgba(177, 81, 64, 0.767) !important; /* これをつけると、優先度が一番高くなる */
+    color: rgba(177, 81, 64, 0.767) !important; /* これをつけると、通常の詳細度ルールより強く優先される特殊な指定 */
     /* !importantは強力な例外ルール。基本は乱用しない。 */
 }
 
@@ -57,12 +57,17 @@ button{
 }
 
 a{
+    /* display: block; */
+    /* display: inline-block; */
     width: 100px;
     height: 50px;
-    /* display: block; */
     /* block要素は新しい行から始まる、widthとheightを指定できる */
     /* inline要素は行内に配置される、widthとheightを指定できない */
-    /* block-inline要素は行内に配置され、widthとheightを指定できる */
+    /* inline-block要素は行内に配置され、widthとheightを指定できる */
     /* <a>要素はデフォルトでインライン要素なので、幅と高さを指定するにはdisplay: block;が必要 */
     /* <span>も同様 */
+}
+
+.movie-title{
+    color: rgba(50, 155, 216, 0.884);
 }
