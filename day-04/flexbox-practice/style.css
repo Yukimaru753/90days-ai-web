@@ -1,0 +1,41 @@
+* {
+    /* box-sizing: border-box; */
+}
+
+
+.flex-container {
+
+    display:flex;
+}
+/* display: flexが付いた要素 = Flex Container */
+
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    width: 250px;
+    flex: 1;
+    /* flex-grow: 1 flex-shrink: 1 flex-basis:0 を意味する */
+
+    /* flex-grow は余ったスペースをどう分けるか */
+    /* flex-shrinkは足りないスペースをどう処理するか */
+    /* flex-basisはどのサイズからスタートかを指定する */
+
+    /* flex-basis:auto は自分のもともとのサイズを基準にする */
+    /* flex-basis:0% はもともとのサイズを基準にせず、ゼロからgrowで分配する */
+    
+    /* initial → 基本そのまま。必要なら縮む 0 1 auto
+       auto    → 元サイズを基準に伸び縮み 1 1 auto
+       none    → 元サイズを維持 0 0 auto
+       1,2...  → 比率でスペースを分配 1 1 0%
+    */ 
+
+}
+
+.flex-container .two {
+    flex-shrink:0;
+}
+/* display: flexが付いた要素の直接の子要素 = Flex Item */
+/* さらにflex-itemにdisplay:flexをつける */
+/* 親から見る→ flex-item */
+/* 子から見る→ flex-container */
