@@ -1,24 +1,24 @@
-*{
-    box-sizing:border-box; 
-    /* box-sizing:border-box;を指定しておくことで 
+* {
+  box-sizing: border-box;
+  /* box-sizing:border-box;を指定しておくことで 
     サイズ計算を直感的に行うことができる*/
-    /* marginやpaddingは必要に応じてリセットすればいい */
-    /* padding:0; */
-    /* margin:0; */
-    /* outline: 2px solid red; */
-    /* ウェブページ上のすべてのものは長方形のハコ */
+  /* marginやpaddingは必要に応じてリセットすればいい */
+  /* padding:0; */
+  /* margin:0; */
+  /* outline: 2px solid red; */
+  /* ウェブページ上のすべてのものは長方形のハコ */
 }
 
-#title{
-    color: red;
-    font-family:"Times New Roman", serif;
-    font-size: 24px;
-    font-weight: 100;
-    /* text-align: center; */
+#title {
+  color: red;
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 100;
+  /* text-align: center; */
 }
 
-.subtitle-text{
-    color: blue;
+.subtitle-text {
+  color: blue;
 }
 
 /* id class type(p,h1) *の順に優先される */
@@ -28,46 +28,51 @@
 /* 詳細度が一緒ならあとから書いたCSSが勝つ */
 /* インラインは上のどの要素よりも優先されるので、あとから管理しにくい */
 
-.subtitle-text{
-    color: rgb(255, 0, 234);
+.subtitle-text {
+  color: rgb(255, 0, 234);
 }
 
-.subtitle-text{
-    color: rgba(177, 81, 64, 0.767) !important; /* これをつけると、通常の詳細度ルールより強く優先される特殊な指定 */
-    /* !importantは強力な例外ルール。基本は乱用しない。 */
+.subtitle-text {
+  color: rgba(
+    177,
+    81,
+    64,
+    0.767
+  ) !important; /* これをつけると、通常の詳細度ルールより強く優先される特殊な指定 */
+  /* !importantは強力な例外ルール。基本は乱用しない。 */
 }
 
-img{
-    width: 300px;
-    height: auto;
-    padding:10px;
-    border:black 2px solid;
-    margin: 10px;
-    /* margin-top: 10px; */
-    /* margin-right: 20px; */
-    /* margin-left: 30px; */
-    /* margin-bottom: 40px; */
-    /* margin: 10px 20px 40px 30px; （時計回り）*/
-    /* marginの値を負にすると、要素同士が重なったりする */
+img {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border: black 2px solid;
+  margin: 10px;
+  /* margin-top: 10px; */
+  /* margin-right: 20px; */
+  /* margin-left: 30px; */
+  /* margin-bottom: 40px; */
+  /* margin: 10px 20px 40px 30px; （時計回り）*/
+  /* marginの値を負にすると、要素同士が重なったりする */
 }
 
-button{
-    background-color: #b43f3f;
-    color: #fff;
+button {
+  background-color: #b43f3f;
+  color: #fff;
 }
 
-a{
-    /* display: block; */
-    /* display: inline-block; */
-    width: 100px;
-    height: 50px;
-    /* block要素は新しい行から始まる、widthとheightを指定できる */
-    /* inline要素は行内に配置される、widthとheightを指定できない */
-    /* inline-block要素は行内に配置され、widthとheightを指定できる */
-    /* <a>要素はデフォルトでインライン要素なので、幅と高さを指定するにはdisplay: block;が必要 */
-    /* <span>も同様 */
+a {
+  /* display: block; */
+  /* display: inline-block; */
+  width: 100px;
+  height: 50px;
+  /* block要素は新しい行から始まる、widthとheightを指定できる */
+  /* inline要素は行内に配置される、widthとheightを指定できない */
+  /* inline-block要素は行内に配置され、widthとheightを指定できる */
+  /* <a>要素はデフォルトでインライン要素なので、幅と高さを指定するにはdisplay: block;が必要 */
+  /* <span>も同様 */
 }
 
-.movie-title{
-    color: rgba(50, 155, 216, 0.884);
+.movie-title {
+  color: rgba(50, 155, 216, 0.884);
 }
