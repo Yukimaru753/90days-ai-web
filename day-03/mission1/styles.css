@@ -64,7 +64,7 @@ button {
 a {
   /* display: block; */
   /* display: inline-block; */
-  width: 100px;
+  width: 300px;
   height: 50px;
   /* block要素は新しい行から始まる、widthとheightを指定できる */
   /* inline要素は行内に配置される、widthとheightを指定できない */

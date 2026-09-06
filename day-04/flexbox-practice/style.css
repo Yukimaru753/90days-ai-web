@@ -1,40 +1,52 @@
-
 .flex-container {
-
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  /* flex-flow: row wrap;と同じ */
+  height: 700px;
+  justify-content: space-evenly;
+  align-items: flex;
+  align-content: center;
+  /* align-contentは行間の余白を埋める  */
+  gap: 5px;
 }
 /* display: flexが付いた要素 = Flex Container */
 /* block要素
 
-横幅 → 基本的に利用可能な幅いっぱい
-高さ → 基本的に中身に合わせる */
+/* justify-content → main axisを操作
+align-items → cross axisを操作 */
 
-.flex-container div {
-    background: peachpuff;
-    border: 4px solid brown;
-    height: 100px;
-    width: 500px;
-    flex: auto;
-    /* flex-grow: 1 flex-shrink: 1 flex-basis:0 を意味する */
+/* 横幅 → 基本的に利用可能な幅いっぱい */
+/* 高さ → 基本的に中身に合わせる */
+ .flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 100px;
+  width: 250px;
+  flex: initial;
+  /* flex-grow: 1 flex-shrink: 1 flex-basis:0 を意味する */
 
-    /* flex-grow は余ったスペースをどう分けるか */
-    /* flex-shrinkは足りないスペースをどう処理するか */
-    /* flex-basisはどのサイズからスタートかを指定する */
+  /* flex-grow は余ったスペースをどう分けるか */
+  /* flex-shrinkは足りないスペースをどう処理するか */
+  /* flex-basisはどのサイズからスタートかを指定する */
 
-    /* flex-basis:auto は自分のもともとのサイズを基準にする */
-    /* flex-basis:0% はもともとのサイズを基準にせず、ゼロからgrowで分配する */
+  /* flex-basis:auto は自分のもともとのサイズを基準にする */
+  /* flex-basis:0% はもともとのサイズを基準にせず、ゼロからgrowで分配する */
 
-    /* initial → 基本そのまま。必要なら縮む 0 1 auto
+  /* initial → 基本そのまま。必要なら縮む 0 1 auto
        auto    → 元サイズを基準に伸び縮み 1 1 auto
        none    → 元サイズを維持 0 0 auto
        1,2...  → 比率でスペースを分配 1 1 0%
-    */ 
+    */
+}
 
+.flex-container .one {
+    /* margin-right:auto; */
 }
 
 .flex-container .two {
-    flex-shrink:0;
+  flex-shrink: 0;
+  /* align-self:flex-start; */
 }
 /* display: flexが付いた要素の直接の子要素 = Flex Item */
 /* さらにflex-itemにdisplay:flexをつける */
