@@ -32,6 +32,12 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 -flex-wrap / align-content
 -auto margins / order など
 
+## Day 5
+
+-The Odin Projectに取り組んだ
+-Landing Page完成！
+-Flexboxで各セクションを実装してGitHubにpushした。
+
 
 ## Tech Stack
 
