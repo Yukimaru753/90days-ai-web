@@ -52,9 +52,9 @@
 /* main section 全体の書式*/
 .main-section {
   background-color: aliceblue;
-  padding-top: 36px;
+  padding-top: 62px;
   padding-right: 72px;
-  padding-bottom: 42px;
+  padding-bottom: 56px;
   padding-left: 72px;
 }
 
@@ -73,4 +73,55 @@
   color: rgb(86, 92, 92);
   font-size: 18px;
   padding-left: 20px;
+}
+
+/* ----------------------------------- */
+/* future section */
+
+/* now,future の親 */
+.future-section {
+  padding-top: 66px;
+  padding-right: 84px;
+  padding-bottom: 40px;
+  padding-left: 84px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* title */
+.future-title {
+  margin: 20px;
+  font-size: 34px;
+  color: rgb(68, 75, 75);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: rgb(154, 179, 14);
+  text-decoration-style: dotted;       /* solid | double | dotted | dashed | wavy */
+  text-decoration-thickness: 2px;
+}
+
+/* text */
+.future-text {
+  color: rgb(86, 92, 92);
+  font-size: 18px;
+}
+
+/* now全体の書式 */
+.now {
+  background-color: rgb(231, 231, 231);
+  padding:10px;
+  width: 550px;
+  height: 240px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* future全体の書式 */
+.future {
+  background-color: beige;
+  padding: 10px;
+  width: 550px;
+  height: 240px;
+  border-radius: 10px;
 }
