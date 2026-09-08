@@ -1,6 +1,47 @@
 * {
-    box-sizing:border-box;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }
 
 /* ----------------------------------- */
 /* header section */
+
+/* textとnameの親 */
+.header {
+  display: flex;
+  background-color: rgb(44, 59, 109);
+  padding-top: 30px;
+  padding-right: 90px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+  gap:58px;
+  align-items: center;
+}
+
+/* textの書式 */
+.header-text {
+  color: rgb(228, 231, 233);
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+  margin-right:auto;
+  padding-right:18px;
+  padding-left:18px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* nameの書式 */
+.header-name {
+  color: rgb(228, 231, 233);
+  margin:0;
+  font-size: 30px;
+  
+}
+
+/* x-linkの書式 */
+.x-link {
+    display:block;
+    color: rgb(228, 231, 233);
+    font-size:26px;
+}
