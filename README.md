@@ -38,6 +38,12 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 -Landing Page完成！
 -Flexboxで各セクションを実装してGitHubにpushした。
 
+## Day 6
+
+-HTML/CSSでプロフィールページを制作
+-Flexboxを復習しつつ、自力でレイアウトを組んだ
+-JavaScriptの学習を開始
+-console.log、let / const、外部JSファイルの読み込みなど基礎を学習
 
 ## Tech Stack
 
