@@ -14,8 +14,9 @@
   padding-right: 90px;
   padding-bottom: 38px;
   padding-left: 72px;
-  gap:58px;
+  gap: 58px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /* textの書式 */
@@ -24,9 +25,9 @@
   margin: 0;
   font-size: 36px;
   font-weight: 600;
-  margin-right:auto;
-  padding-right:18px;
-  padding-left:18px;
+  margin-right: auto;
+  padding-right: 18px;
+  padding-left: 18px;
   border: 2px solid white;
   border-radius: 5px;
 }
@@ -34,16 +35,15 @@
 /* nameの書式 */
 .header-name {
   color: rgb(228, 231, 233);
-  margin:0;
+  margin: 0;
   font-size: 30px;
-  
 }
 
 /* x-linkの書式 */
 .x-link {
-    display:block;
-    color: rgb(228, 231, 233);
-    font-size:26px;
+  display: block;
+  color: rgb(228, 231, 233);
+  font-size: 26px;
 }
 
 /* ----------------------------------- */
@@ -51,26 +51,26 @@
 
 /* main section 全体の書式*/
 .main-section {
-    background-color: aliceblue;
-    padding-top:36px;
-    padding-right:72px;
-    padding-bottom: 42px;
-    padding-left:72px;
+  background-color: aliceblue;
+  padding-top: 36px;
+  padding-right: 72px;
+  padding-bottom: 42px;
+  padding-left: 72px;
 }
 
 /* main-title */
 .main-title {
-    text-align: center;
-    margin:0;
-    font-size: 51px;
-    padding-bottom: 12px;
-    text-decoration: underline;
-    text-decoration-color: rgb(143, 89, 156);
+  text-align: center;
+  margin: 0;
+  font-size: 51px;
+  padding-bottom: 12px;
+  text-decoration: underline;
+  text-decoration-color: rgb(143, 89, 156);
 }
 
 /* main-text */
 .main-text {
-   color:rgb(86, 92, 92) ;
-   font-size:18px;
-   padding-left:20px;
+  color: rgb(86, 92, 92);
+  font-size: 18px;
+  padding-left: 20px;
 }
