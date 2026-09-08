@@ -10,9 +10,9 @@
 .header {
   display: flex;
   background-color: rgb(44, 59, 109);
-  padding-top: 30px;
+  padding-top: 26px;
   padding-right: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 38px;
   padding-left: 72px;
   gap:58px;
   align-items: center;
@@ -44,4 +44,33 @@
     display:block;
     color: rgb(228, 231, 233);
     font-size:26px;
+}
+
+/* ----------------------------------- */
+/* main section */
+
+/* main section 全体の書式*/
+.main-section {
+    background-color: aliceblue;
+    padding-top:36px;
+    padding-right:72px;
+    padding-bottom: 42px;
+    padding-left:72px;
+}
+
+/* main-title */
+.main-title {
+    text-align: center;
+    margin:0;
+    font-size: 51px;
+    padding-bottom: 12px;
+    text-decoration: underline;
+    text-decoration-color: rgb(143, 89, 156);
+}
+
+/* main-text */
+.main-text {
+   color:rgb(86, 92, 92) ;
+   font-size:18px;
+   padding-left:20px;
 }
