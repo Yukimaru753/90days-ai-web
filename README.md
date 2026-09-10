@@ -45,6 +45,13 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 -JavaScriptの学習を開始
 -console.log、let / const、外部JSファイルの読み込みなど基礎を学習
 
+## Day 7
+
+-Node.js / npmの環境構築
+-Data Types & Conditionals
+-比較演算子（=== など）
+-論理演算子（&& / ||）
+
 ## Tech Stack
 
 -HTML
