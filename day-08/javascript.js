@@ -3,7 +3,7 @@ const isLoggedIn = true;
 const age = 18;
 
 //usernameはtruthyなので実行される
-if(username && isLoggedIn === true) {
+if(username && isLoggedIn) {
     //username, isLoggedInがtrue
     console.log(`Welcome, ${username}`);
     const message = age < 18 ? "You are under 18." : "All right";
@@ -15,9 +15,5 @@ if(username && isLoggedIn === true) {
     } else {
         //usernameがfalse
         console.log("Please enter your name.");
-        if(isLoggedIn === false){
-            //isLoggedInもfalse
-            console.log("Please log in.");
-        }
     }
 }
