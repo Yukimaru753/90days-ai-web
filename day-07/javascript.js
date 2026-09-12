@@ -163,7 +163,7 @@ console.log(trim);
 //---------------------------------
 //比較演算子    
 
-// >, <, >=, =<, ==, !=(≠), など
+// >, <, >=, <=, ==, !=(≠), など
 //true, falseで返ってくる
 
 //'2' > 1　文字は数字として認識される
@@ -207,3 +207,112 @@ if (条件) {
 */
 
 // ! は反転
+
+//三項演算子
+//単純な if / else を短く書ける方法
+//条件 ? YES : NO
+
+let age=20;
+let accessAllowed = (age > 18) ? true : false; //(age > 18がtrueなら左、falseなら右が返される)
+console.log(accessAllowed);
+
+// the same
+let accessAllowed2 = age > 18;
+console.log(accessAllowed2);
+
+//|| は単に true / false を返すだけじゃなく、実際の値そのものを返すことがある
+//|| は左から順番に見て、最初のtruthyな値を見つけたら、その値をそのまま返す
+//&& は左から順番に見て、最初のfalsyな値を見つけたら、その値をそのまま返す
+const result2 = null || 0 ||"Yukimaruu";
+console.log(result2);
+
+//Boolean変換（ブール変換）
+//falsy 
+
+/*
+false
+0
+""
+null
+undefined
+NaN
+*/
+
+//これらは条件式でfalseとして扱われる
+//true / false は「実際のBoolean値」
+//truthy / falsy は「Booleanとして見たときの扱われ方」
+
+
+//ショートサーキット理論
+const isLoggedIn = true;
+
+isLoggedIn || alert("ログインしてください");
+//||は左側がtruthyだったら、右側は評価すらしない。
+//&& は逆で、左側がfalsyだった時点で右側を評価しない
+
+//AND演算子の優先順位はOR よりも高い。&& > ||
+
+alert(alert(1) || 2 || alert(3));
+//まずalert(1)が実行される 1
+//alert() の戻り値は undefined なので
+//2へ
+//truthyなのでここで終了
+//外側のalert(2)が実行される
+
+alert( null || 2 && 3 || 4 );
+//まず2 && 3でどちらもtruthyなので真ん中は３になる
+//null || 3 || 4で3が返される
+//alert(3)を実行
+
+//スイッチ文
+/*
+switch(x) {
+  case 'value1':  // if (x === 'value1')
+    ...
+    [break]
+
+  case 'value2':  // if (x === 'value2')
+    ...
+    [break]
+
+  default:
+    ...
+    [break]
+}
+*/
+
+//breakがなかったら条件が合った時点でチェックなしに次のケースのコードを実行する
+/*
+let a = 2 + 2;
+
+switch (a) {
+  case 3:
+    alert( 'Too small' );  //条件に合わない
+  case 4:
+    alert( 'Exactly!' );   //条件に合うのでalert()を実行
+  case 5:
+    alert( 'Too big' );  //breakがないのでalert()を実行
+  default:
+    alert( "I don't know such values" );　//breakがないのでalert()を実行
+}
+*/
+
+//ケースはグループ化できる
+/*
+let a = 3;
+
+switch (a) {
+  case 4:
+    alert('Right!');
+    break;
+
+  case 3: // 同じコードを二つのケースで共有している
+  case 5:
+    alert('Wrong!');
+    alert("Why don't you take a math class?");
+    break;
+
+  default:
+    alert('The result is strange. Really.');
+}
+*/
