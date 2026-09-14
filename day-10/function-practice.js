@@ -54,7 +54,7 @@ console.log(number2);
 //名前のないfunction
 
 const doubleNumber2 = function (number) {
-    return number * 2;
+  return number * 2;
 };
 
 let number3 = doubleNumber2(4);
@@ -64,22 +64,12 @@ console.log(number3);
 
 const message = "text meSsaGe";
 
-function pickUpFirst(text) {
-    return text.slice(0, 1);
+function capitalize(text) {
+  let first = text.slice(0, 1).toUpperCase();
+  let rest = text.slice(1).toLowerCase();
+
+  return first + rest;
 }
 
-function pickUpRest(text, length){
-    return text.slice(1,length);
-}
-
-function toUpperFirst(text) {
-    let length = text.length;
-
-    let first = pickUpFirst(text);
-    let rest = pickUpRest(text, length);
-
-    return first.toUpperCase() + rest.toLowerCase();
-}
-
-const firstUpperMessage = toUpperFirst(message);
-console.log(firstUpperMessage);
+const capitalizedMessage = capitalize(message);
+console.log(capitalizedMessage);
