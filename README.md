@@ -57,6 +57,10 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 -day7の内容を復習
 -Jestを使った演習5問を完走
 
+## Day 9
+
+-The Odin ProjectのChrome DevToolの使い方を学んだ
+
 ## Tech Stack
 
 -HTML
