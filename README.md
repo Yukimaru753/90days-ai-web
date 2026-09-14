@@ -61,6 +61,14 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 
 -The Odin ProjectのChrome DevToolの使い方を学んだ
 
+## Day 10
+
+-関数宣言 / 関数式
+-return / スコープ
+-匿名関数 / アロー関数
+-capitalize / lastLetter を実装
+-DevToolsで関数の動きも確認
+
 ## Tech Stack
 
 -HTML
