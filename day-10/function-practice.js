@@ -61,6 +61,7 @@ let number3 = doubleNumber2(4);
 console.log(number3);
 
 //-----------------------------------------
+//The Odin Project Assighment3
 
 const message = "text meSsaGe";
 
@@ -73,3 +74,12 @@ function capitalize(text) {
 
 const capitalizedMessage = capitalize(message);
 console.log(capitalizedMessage);
+
+//-----------------------------------------
+//The Odin Project Assighment4
+
+const text = "Abcd";
+
+const lastLetter = text => text.slice(-1); //短い処理なのでアロー関数
+
+console.log(lastLetter(text));
