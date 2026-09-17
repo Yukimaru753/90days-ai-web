@@ -1,8 +1,16 @@
 const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
 
+//書き方１：通常はこっち
 for (const cat of cats) {
     console.log(cat);
 }
+
+// 書き方２：ループの途中でなんかしたいとき
+for (let i = 0; i < cats.length; i++) {
+    console.log(cats[i]);
+}
+
+console.log(cats.length);
 
 //書き方１
 function toUpper(string) {
