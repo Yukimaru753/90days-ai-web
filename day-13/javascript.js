@@ -2,12 +2,12 @@ const cats = ["Leopard", "Serval", "Jaguar", "Tiger", "Caracal", "Lion"];
 
 //書き方１：通常はこっち
 for (const cat of cats) {
-    console.log(cat);
+  console.log(cat);
 }
 
 // 書き方２：ループの途中でなんかしたいとき
 for (let i = 0; i < cats.length; i++) {
-    console.log(cats[i]);
+  console.log(cats[i]);
 }
 
 console.log(cats.length);
@@ -67,39 +67,39 @@ do {
   i++;
 } while (i <= 3);
 
-
 //break labelNameでそのラベルの付いているループから抜け出せる。（入れ子状態でも抜け出せる）
 outer: for (let i = 0; i < 3; i++) {
-
   for (let j = 0; j < 3; j++) {
-    if (j === 2) {break outer;}
+    if (j === 2) {
+      break outer;
+    }
     console.log(j);
   }
 }
 
-console.log('Done!');
+console.log("Done!");
 
 // 回数がはっきりしている：for
 // 条件が満たされるまで繰り返したい：while が自然なことが多い
 let count = 0;
 
 while (count <= 10) {
-    if(count === 0) {
-        count++;
-        continue;
-    }else if(count % 2 === 0) {
-        console.log(count);
-    } else {
-        count++;
-        continue;
-    }
+  if (count === 0) {
     count++;
+    continue;
+  } else if (count % 2 === 0) {
+    console.log(count);
+  } else {
+    count++;
+    continue;
+  }
+  count++;
 }
 
-for (let i = 2; i <= 10; i++){
-    if(i % 2 === 0) {
-        console.log(i);
-    }
+for (let i = 2; i <= 10; i++) {
+  if (i % 2 === 0) {
+    console.log(i);
+  }
 }
 
 // 任意の数nまでの素数を出力する
@@ -128,19 +128,19 @@ let n = 10;
 let primeMessage = `n = ${n} `;
 
 for (let i = 2; i <= n; i++) {
-    if(i === 2) {
-        primeMessage += `${i},`;
-    } else {
-        for (let j = 2; j <= i - 1; j++) {
-            if (i % j === 0) {
-                break;
-            }
-            if (j === i - 1) {
-                primeMessage += `${i},`;
-            }
-        }
-    }
-}
+  let isPrime = true;
+  let j = 2;
 
+  while (isPrime && i !== j) {
+    if (i % j === 0) {
+      isPrime = false;
+    }
+    j++;
+  }
+
+  if (isPrime) {
+    primeMessage += `${i},`;
+  }
+}
 
 console.log(primeMessage.slice(0, -1));
