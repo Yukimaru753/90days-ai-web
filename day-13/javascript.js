@@ -78,3 +78,26 @@ outer: for (let i = 0; i < 3; i++) {
 }
 
 console.log('Done!');
+
+// 回数がはっきりしている：for
+// 条件が満たされるまで繰り返したい：while が自然なことが多い
+let count = 0;
+
+while (count <= 10) {
+    if(count === 0) {
+        count++;
+        continue;
+    }else if(count % 2 === 0) {
+        console.log(count);
+    } else {
+        count++;
+        continue;
+    }
+    count++;
+}
+
+for (let i = 2; i <= 10; i++){
+    if(i % 2 === 0) {
+        console.log(i);
+    }
+}
