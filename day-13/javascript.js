@@ -124,23 +124,24 @@ for (let i = 2; i <= 10; i++) {
 // 出力する文字列 primeMessage
 // 任意の数字 n
 
-let n = 10;
-let primeMessage = `n = ${n} `;
+let n = 10; //任意の数字
+let primeMessage = `n = ${n} `; //出力する文字列
 
+//素数の判定をする
 for (let i = 2; i <= n; i++) {
-  let isPrime = true;
-  let j = 2;
+  let isPrime = true; // 素数だと仮定する
+  let j = 2; // 2からi-1までの数で割って調べる
 
-  while (isPrime && i !== j) {
+  while (isPrime && i !== j) { // i=2の場合も素数として扱える
     if (i % j === 0) {
-      isPrime = false;
+      isPrime = false; // 割り切れたら素数ではないと判定
     }
     j++;
   }
 
   if (isPrime) {
-    primeMessage += `${i},`;
+    primeMessage += `${i},`; // 素数を出力文字列に追加
   }
 }
 
-console.log(primeMessage.slice(0, -1));
+console.log(primeMessage.slice(0, -1)); // 最後のカンマを削除して出力
