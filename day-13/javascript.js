@@ -66,3 +66,15 @@ do {
   console.log(i);
   i++;
 } while (i <= 3);
+
+
+//break labelNameでそのラベルの付いているループから抜け出せる。（入れ子状態でも抜け出せる）
+outer: for (let i = 0; i < 3; i++) {
+
+  for (let j = 0; j < 3; j++) {
+    if (j === 2) {break outer;}
+    console.log(j);
+  }
+}
+
+console.log('Done!');
