@@ -102,3 +102,28 @@ for (let i = 2; i <= 10; i++){
     }
 }
 
+// 任意の数nまでの素数を出力する
+// nを指定する
+// FOR：1~nまで繰り返す
+// IF
+// i = 1なら i,と文字列に追加
+// ELSE IF
+// i = 2なら i,と文字列に追加
+// ELSE
+// FOR：2~n-1まで繰り返す
+// iを2~n-1までわる
+// IF
+// わったあまりが0になる：break
+// IFEND
+// i,と文字列に追加
+// FOREND
+// IFEND
+// FOREND
+// 文字列を表示
+
+// INPUT
+// 出力する文字列 primeMessage
+// 任意の数字 n
+
+let n = 10;
+let primeMessage = `n = ${n}`;
