@@ -58,3 +58,11 @@ for (let i = 1; i <= 5; i++) {
 
   console.log(i);
 }
+
+//do while 実行=>条件確認だから　とりあえず一回は実行される
+let i = 10;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 3);
