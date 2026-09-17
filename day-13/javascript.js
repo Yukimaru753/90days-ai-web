@@ -41,3 +41,20 @@ const filtered2 = cats.filter((cat) => cat.startsWith("L")); //returnは省略�
 
 console.log(filtered2);
 
+//continue：その周の残りだけ飛ばして次の周回へ
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+
+  console.log(i);
+}
+
+//break：そこでループ自体を終了
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break;
+  }
+
+  console.log(i);
+}
