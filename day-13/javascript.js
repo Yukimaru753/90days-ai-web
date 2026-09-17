@@ -204,3 +204,12 @@ console.log(arr.indexOf(false)); //見つからなければ-1を返す
 console.log(arr.includes("3")); //みつけたらtrue
 console.log(arr.includes(3)); //みつからなければfalse
 //includesメソッドは　=== で判別しているから正確
+
+let users = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Pete" },
+  { id: 1, name: "Mary" }
+];
+
+let user = users.find((item) => item.id == 1); //条件にあう最初のitemを返す
+console.log(user.name);
