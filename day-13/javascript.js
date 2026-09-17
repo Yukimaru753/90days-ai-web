@@ -103,26 +103,29 @@ for (let i = 2; i <= 10; i++) {
 }
 
 // 任意の数nまでの素数を出力する
-// nを指定する
-// FOR：2~nまで繰り返す
-// IF
-// i = 2なら i,と文字列に追加
-// ELSE
-// FOR：2~n-1まで繰り返す
-// iを2~i-1までわる
-// IF
-// わったあまりが0になる：break
-// IFEND
-// i,と文字列に追加
-// FOREND
-// IFEND
-// FOREND
-
-// 文字列を表示
-
 // INPUT
 // 出力する文字列 primeMessage
 // 任意の数字 n
+
+// 素数の判定をする
+// FOR
+// 2~nで繰り返す
+// INPUT
+// 素数と判定するブール isPrime
+// iを割る数字 j
+// WHILE
+// isPrimeがtrueかつjがiより小さい間はループする
+// IF
+// iがjでわれる：isPrimeをfalseにして終了
+// IFEND
+// WHILEEND
+// IF
+// isPrimeがtrue；iは素数なので文字列に追加する
+// FOREND
+
+// 文字列の最後のカンマを消去
+// 文字列を表示
+
 
 let n = 10; //任意の数字
 let primeMessage = `n = ${n} `; //出力する文字列
