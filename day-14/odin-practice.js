@@ -14,7 +14,7 @@ console.log(sumOfTripleEven(numbers));
 
 // forを使う前に目的に合う配列メソッドを検討
 //すべてのダッシュを削除し、ダッシュ以降の単語を大文字にする。最後にそれらを連結
-function splitPractice(text) {
+function camelize(text) {
   return text
     .split("-")
     .map((word, index) =>
@@ -25,4 +25,11 @@ function splitPractice(text) {
     .join("");
 }
 
-console.log(splitPractice("my-short-string"));
+console.log(camelize("my-short-string"));
+
+function filterRange(array,a ,b) {
+    return array.filter((num) => a <= num && num <= b);
+}
+
+let noRange = [5, 3, 8, 1];
+console.log(filterRange(noRange, 3, 7));
