@@ -45,16 +45,47 @@ function filterRangeInPlace(array, a, b) {
 }
 
 let noRange2 = [5, 3, 8, 1];
-filterRangeInPlace(noRange2, 3, 7)
+filterRangeInPlace(noRange2, 3, 7);
 console.log(noRange2);
 
 let arr = [5, 2, 1, -10, 8];
 console.log(arr.sort((a, b) => b - a));
 
 function copySorted(array) {
-    return array.slice().sort();
+  return array.slice().sort();
 }
 
 let original = ["HTML", "JavaScript", "CSS"];
 let copy = copySorted(original);
 console.log(copy);
+
+function shuffle(array) {
+  //配列a[1, 2, 3, ...,n]をランダムに並び替える
+//   aのコピーbを用意
+  // FOR
+  // [0, 2, 3, ...,n-1]の数字をいれた配列cを用意
+  // FOREND
+  // FOR
+  // bのi番目をaの何番目に入れるかをcの配列からランダムにとりだした数字で決める
+  // cからランダムに数字を一つ取り出し、取り出した数字はcから消去
+  // aの取り出した数字番目をbのi番目に置き換え
+  // FOREND
+
+  let indexBox = [];
+  let copyBox = array.slice();
+  for (let i = 0; i < array.length; i++) {
+    indexBox.push(i);
+  }
+
+  for (let i = 0; i < array.length; i++) {
+    //idnexbox内のランダムな数字
+    let num = Math.floor(Math.random() * indexBox.length);
+    let index = indexBox.splice(num, 1)[0];
+    array[index] = copyBox[i];
+  }
+}
+
+let originalArray = [1, 2, 3];
+shuffle(originalArray);
+console.log(originalArray);
+
