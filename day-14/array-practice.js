@@ -13,7 +13,7 @@ products.forEach((product) => console.log(`${product.name}: ${product.price}円`
 let availableProducts = products.filter((product) => product.stock > 0);
 
 //全商品の名前だけを取り出し、productNames という新しい配列を作る
-let productsNames = availableProducts.map((product) => {return product.name});
+let productNames = products.map((product) => product.name);
 
 //find() で "Monitor" を探し、そのオブジェクトを表示する
 const foundProduct = products.find((product) => product.name === "Monitor");
@@ -23,6 +23,6 @@ console.log(foundProduct);
 let filteredProducts = products.filter((product) => product.price <= 10000 && product.stock > 0);
 
 //その結果に map() をつなげて商品名だけの配列を作る
-let filteredProductsName = filteredProducts.map((product) => {return product.name});
+let filteredProductsName = filteredProducts.map((product) => product.name);
 
 console.log(filteredProductsName);
