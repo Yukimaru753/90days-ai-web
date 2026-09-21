@@ -90,8 +90,10 @@ let originalArray = [1, 2, 3];
 shuffle(originalArray);
 console.log(originalArray);
 
+//for ofを使えば元の配列に干渉せずに、一つ一つの要素を処理できる
+//配列を先頭から順番に処理
 function unique(array) {
-  //配列内から同じ内容を削除して、新たな一意な配列を作る
+  // arrayを順番に見て、uniqueArrになければ追加する
   // FOR
   // IF
   // 新配列に存在していない
