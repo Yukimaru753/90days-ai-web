@@ -133,3 +133,5 @@ let strings = [
 ];
 
 console.log(unique(strings));
+
+//配列 = 複数のデータをひとまとまりにして、一括で扱いやすくするもの
