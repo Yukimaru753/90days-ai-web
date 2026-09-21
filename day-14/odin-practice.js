@@ -11,3 +11,23 @@ function sumOfTripleEven(array) {
 }
 
 console.log(sumOfTripleEven(numbers));
+
+//すべてのダッシュを削除し、ダッシュ以降の単語を大文字にする。最後にそれらを連結
+function splitPractice(text) {
+  //-で分ける
+  const texts = text.split("-");
+  //textsを大文字始まりに変える
+  for (let i = 0; i < texts.length; i++) {
+    if (i === 0) {
+      texts[i] = texts[i].toLowerCase();
+    } else {
+      const textsFirst = texts[i].at(0).toUpperCase();
+      const textsRest = texts[i].slice(1).toLowerCase();
+      texts[i] = textsFirst + textsRest; 
+    }
+  }
+  //textsの内容をまとめる
+  return texts.reduce((regularedText, word) => regularedText + word, "");
+}
+
+console.log(splitPractice("my-short-string"));
