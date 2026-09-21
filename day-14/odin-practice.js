@@ -47,3 +47,14 @@ function filterRangeInPlace(array, a, b) {
 let noRange2 = [5, 3, 8, 1];
 filterRangeInPlace(noRange2, 3, 7)
 console.log(noRange2);
+
+let arr = [5, 2, 1, -10, 8];
+console.log(arr.sort((a, b) => b - a));
+
+function copySorted(array) {
+    return array.slice().sort();
+}
+
+let original = ["HTML", "JavaScript", "CSS"];
+let copy = copySorted(original);
+console.log(copy);
