@@ -111,24 +111,35 @@ function unique(array) {
   // INPUT
   // 返す配列 uniqueArr
   // 削除した先頭を一時保存する keepTop
+  // 元の配列のコピー copyArr
 
   let uniqueArr = [];
-  while (array.length > 0) {
+  let copyArr = array.slice();
+
+  while (copyArr.length > 0) {
     //元の配列の第一項を取り出す
-    let keepTop = array.shift();
+    let keepTop = copyArr.shift();
     //新配列に保存
     uniqueArr.push(keepTop);
     //同様の内容を元の配列から消去
-    while (array.indexOf(keepTop) != -1){
-        array.splice(array.indexOf(keepTop), 1);
+    while (copyArr.indexOf(keepTop) !== -1) {
+      copyArr.splice(copyArr.indexOf(keepTop), 1);
     }
   }
 
   return uniqueArr;
 }
 
-let strings = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+let strings = [
+  "Hare",
+  "Krishna",
+  "Hare",
+  "Krishna",
+  "Krishna",
+  "Krishna",
+  "Hare",
+  "Hare",
+  ":-O",
 ];
 
 console.log(unique(strings));
