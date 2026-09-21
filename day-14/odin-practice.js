@@ -61,7 +61,7 @@ console.log(copy);
 
 function shuffle(array) {
   //配列a[1, 2, 3, ...,n]をランダムに並び替える
-//   aのコピーbを用意
+  //   aのコピーbを用意
   // FOR
   // [0, 2, 3, ...,n-1]の数字をいれた配列cを用意
   // FOREND
@@ -78,8 +78,9 @@ function shuffle(array) {
   }
 
   for (let i = 0; i < array.length; i++) {
-    //idnexbox内のランダムな数字
+    //index:idnexBox内のランダムな数字
     let num = Math.floor(Math.random() * indexBox.length);
+    //spliceで一度出た数字は削除される
     let index = indexBox.splice(num, 1)[0];
     array[index] = copyBox[i];
   }
@@ -89,3 +90,45 @@ let originalArray = [1, 2, 3];
 shuffle(originalArray);
 console.log(originalArray);
 
+function unique(array) {
+  //配列内から同じ内容を削除して、新たな一意な配列を作る
+  // WHILE
+  // 元の配列の中身がなくなったら終了
+  // 元の配列の先頭を新配列にpushする
+  // 元の配列の先頭を消去
+  // WHILE
+  // 元の配列に削除した先頭と一致している項があった場合消去
+  // WHILEEND
+  // WHILEEND
+  // 新配列を返す
+
+  // RETURN
+  // 一意な新配列 uniqueArr
+
+  // parameter
+  // 元の配列 array
+
+  // INPUT
+  // 返す配列 uniqueArr
+  // 削除した先頭を一時保存する keepTop
+
+  let uniqueArr = [];
+  while (array.length > 0) {
+    //元の配列の第一項を取り出す
+    let keepTop = array.shift();
+    //新配列に保存
+    uniqueArr.push(keepTop);
+    //同様の内容を元の配列から消去
+    while (array.indexOf(keepTop) != -1){
+        array.splice(array.indexOf(keepTop), 1);
+    }
+  }
+
+  return uniqueArr;
+}
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+  "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+console.log(unique(strings));
