@@ -27,9 +27,23 @@ function camelize(text) {
 
 console.log(camelize("my-short-string"));
 
-function filterRange(array,a ,b) {
-    return array.filter((num) => a <= num && num <= b);
+function filterRange(array, a, b) {
+  return array.filter((num) => a <= num && num <= b);
 }
 
 let noRange = [5, 3, 8, 1];
 console.log(filterRange(noRange, 3, 7));
+console.log(noRange);
+
+function filterRangeInPlace(array, a, b) {
+  for (let i = 0; i < array.length; i++) {
+    if (a > array[i] || array[i] > b) {
+      array.splice(i, 1);
+      i--;
+    }
+  }
+}
+
+let noRange2 = [5, 3, 8, 1];
+filterRangeInPlace(noRange2, 3, 7)
+console.log(noRange2);
