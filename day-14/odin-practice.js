@@ -93,12 +93,11 @@ console.log(originalArray);
 function unique(array) {
   //配列内から同じ内容を削除して、新たな一意な配列を作る
   // WHILE
-  // 元の配列の中身がなくなったら終了
-  // 元の配列の先頭を新配列にpushする
-  // 元の配列の先頭を消去
-  // WHILE
-  // 元の配列に削除した先頭と一致している項があった場合消去
-  // WHILEEND
+  // IF
+  // 新配列に元の配列の先頭が存在していない
+  // 新配列に先頭を追加
+  // IFEND
+  // 元の配列の先頭を削除
   // WHILEEND
   // 新配列を返す
 
@@ -117,14 +116,11 @@ function unique(array) {
   let copyArr = array.slice();
 
   while (copyArr.length > 0) {
-    //元の配列の第一項を取り出す
-    let keepTop = copyArr.shift();
-    //新配列に保存
-    uniqueArr.push(keepTop);
-    //同様の内容を元の配列から消去
-    while (copyArr.indexOf(keepTop) !== -1) {
-      copyArr.splice(copyArr.indexOf(keepTop), 1);
+    if (uniqueArr.indexOf(copyArr[0]) === -1) {
+      uniqueArr.push(copyArr[0]);
     }
+
+    copyArr.shift();
   }
 
   return uniqueArr;
