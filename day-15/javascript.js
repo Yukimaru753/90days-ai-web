@@ -29,8 +29,37 @@ content6.classList.add("content");
 content6.textContent = "ME TOO!";
 content4.appendChild(content6);
 
-
 container.appendChild(content);
 container.appendChild(content2);
 container.appendChild(content3);
 container.appendChild(content4);
+
+const btn = document.querySelector("#btn");
+btn.onclick = () => alert("Hello World");
+btn.addEventListener("click", () => console.log("A"));
+
+btn.addEventListener("click", () => console.log("B"));
+
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("click", () => {
+  alert("Hello World!!!");
+});
+
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
+
+const btn3 = document.querySelector("#btn3");
+btn3.addEventListener("click", alertFunction);
+btn3.addEventListener("click", function (e) {
+  console.log(e.target);
+  e.target.style.background = "blue"; 
+});
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        alert(button.id);
+    });
+});
