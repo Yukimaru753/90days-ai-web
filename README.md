@@ -8,121 +8,137 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 
 ## Day 1
 
--VS Codeの環境構築
--HTMLの基礎
--CSSの基礎
--Git / GitHubの導入 -初めてのcommit / push
+- VS Codeの環境構築
+- HTMLの基礎
+- CSSの基礎
+- Git / GitHubの導入 -初めてのcommit / push
 
 ## Day 2
 
--The Odin ProjectでWeb開発の基礎を学習
--Git / GitHub / HTMLの基礎知識を硬めた
+- The Odin ProjectでWeb開発の基礎を学習
+- Git / GitHub / HTMLの基礎知識を硬めた
 
 ## Day 3
 
--The Odin ProjectでHTML / CSSの基礎を学習
--CSSのカスケード/詳細度/継承
--DevToolsの使い方
--box-sizing など
+- The Odin ProjectでHTML / CSSの基礎を学習
+- CSSのカスケード/詳細度/継承
+- DevToolsの使い方
+- box-sizing など
 
 ## Day 4
 
--flex-grow / shrink / basis
--justify-content / align-items
--flex-wrap / align-content
--auto margins / order など
+- flex-grow / shrink / basis
+- justify-content / align-items
+- flex-wrap / align-content
+- auto margins / order など
 
 ## Day 5
 
--The Odin Projectに取り組んだ
--Landing Page完成！
--Flexboxで各セクションを実装してGitHubにpushした。
+- The Odin Projectに取り組んだ
+- Landing Page完成！
+- Flexboxで各セクションを実装してGitHubにpushした。
 
 ## Day 6
 
--HTML/CSSでプロフィールページを制作
--Flexboxを復習しつつ、自力でレイアウトを組んだ
--JavaScriptの学習を開始
--console.log、let / const、外部JSファイルの読み込みなど基礎を学習
+- HTML/CSSでプロフィールページを制作
+- Flexboxを復習しつつ、自力でレイアウトを組んだ
+- JavaScriptの学習を開始
+- console.log、let / const、外部JSファイルの読み込みなど基礎を学習
 
 ## Day 7
 
--Node.js / npmの環境構築
--Data Types & Conditionals
--比較演算子（=== など）
--論理演算子（&& / ||）
+- Node.js / npmの環境構築
+- Data Types & Conditionals
+- 比較演算子（=== など）
+- 論理演算子（&& / ||）
 
 ## Day 8
 
--day7の内容を復習
--Jestを使った演習5問を完走
+- day7の内容を復習
+- Jestを使った演習5問を完走
 
 ## Day 9
 
--The Odin ProjectのChrome DevToolの使い方を学んだ
+- The Odin ProjectのChrome DevToolの使い方を学んだ
 
 ## Day 10
 
--関数宣言 / 関数式
--return / スコープ
--匿名関数 / アロー関数
--capitalize / lastLetter を実装
--DevToolsで関数の動きも確認
+- 関数宣言 / 関数式
+- return / スコープ
+- 匿名関数 / アロー関数
+- capitalize / lastLetter を実装
+- DevToolsで関数の動きも確認
 
 ## Day 11
 
--問題解決の手法について学んだ
--問題は分割すればするほどいい
--何がわからないかを理解する
--疑似コードの作り方も学んだ
+- 問題解決の手法について学んだ
+- 問題は分割すればするほどいい
+- 何がわからないかを理解する
+- 疑似コードの作り方も学んだ
 
 ## Day 12
 
--コンピュータとじゃんけんをするプログラムを自作した。
--問題解決への姿勢や考え方がかなり身についた。
--疑似コード、アルゴリズムの重要性を理解した。
--コードをわかりやすく書くことの重要性を理解した。
+- コンピュータとじゃんけんをするプログラムを自作した。
+- 問題解決への姿勢や考え方がかなり身についた。
+- 疑似コード、アルゴリズムの重要性を理解した。
+- コードをわかりやすく書くことの重要性を理解した。
 
-・改善点
--return;のあとにbreak;を置いてしまって不必要なコードが生まれてしまったので、これから注意する。
+- 改善点
+- return;のあとにbreak;を置いてしまって不必要なコードが生まれてしまったので、これから注意する。
 
-・今後の課題：commitメッセージを考える時間が無駄なので、さっと書けるようになりたい。
+- 今後の課題：commitメッセージを考える時間が無駄なので、さっと書けるようになりたい。
 
 ## Day 13
 
--for / for...of / while / do...while
--break / continue
--Arrayの基本と配列メソッドを学んだ
--素数を出力するプログラムを実装
--よく使うメソッドだけ覚えて、あとは必要になったときに調べるのが大事
+- for / for...of / while / do...while
+- break / continue
+- Arrayの基本と配列メソッドを学んだ
+- 素数を出力するプログラムを実装
+- よく使うメソッドだけ覚えて、あとは必要になったときに調べるのが大事
 
 ## Day 14
 
--配列 = 複数のデータをひとまとまりにして、一括で扱いやすくするもの
--shuffle関数を自力で実装
--unique関数を実装＆リファクタリング
--配列操作の理解を深めた
+- 配列 = 複数のデータをひとまとまりにして、一括で扱いやすくするもの
+- shuffle関数を自力で実装
+- unique関数を実装＆リファクタリング
+- 配列操作の理解を深めた
 
-・改善点：コードを改善できるポイントをすぐに見極めれるようになりたい
+- 改善点：コードを改善できるポイントをすぐに見極めれるようになりたい
 
-・今後の課題：リファクタリングをなるべく自分で行う、そのあとにAIに精査してもらう
+- 今後の課題：リファクタリングをなるべく自分で行う、そのあとにAIに精査してもらう
 
 ## Day 15
 
--Loops & Arraysの演習
--DOMを学習
--まだあまり実態がつかめていない
+- Loops & Arraysの演習
+- DOMを学習
+- まだあまり実態がつかめていない
 
-・改善点：問題そのままの言葉で受け取るだけでなく、そのコードが求める本質を見極めれるようになりたい
+- 改善点：問題そのままの言葉で受け取るだけでなく、そのコードが求める本質を見極めれるようになりたい
 
-・今後の課題：自分の書いたコードや、自分が作りたいコードの内容を柔らかくかみ砕いて
-自分に説明できるようにする
+- 今後の課題：自分の書いたコードや、自分が作りたいコードの内容を柔らかくかみ砕いて自分に説明できるようにする
 
 ## Day 16
 
--DOMでじゃんけんUIを実装
--Git branch → mergeを実践
--DOMの操作に慣れることができた
+- DOMでじゃんけんUIを実装
+- Git branch → mergeを実践
+- DOMの操作に慣れることができた
+
+## Day 17
+
+- rock/scissors/paperの修正
+- landingpageの修正
+
+## Day 18
+
+- The Odin Project「Etch-a-Sketch」完成
+- DOM・イベント・ループを組み合わせて、最初から最後まで形にできた
+- JSでグリッドを動的生成
+- グリッドサイズ変更（1〜100）
+- マウス操作でランダムRGB描画
+- 10回の操作で完全に色付く機能
+- datasetで各マスの状態を管理
+- Reset機能
+- 疑似コード＆コード整理
 
 ## Tech Stack
 
