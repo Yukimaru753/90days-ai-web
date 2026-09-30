@@ -59,6 +59,8 @@ let codes = {
   1: "USA",
 };
 
+// objectのfoe文
+// for(let key in object)
 for (let code in codes) {
     console.log(code);
 }
