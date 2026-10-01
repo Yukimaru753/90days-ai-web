@@ -77,3 +77,61 @@ for (let code in codes2) {
     console.log(+code);
 }
 // +"20"：20 ← 数値へ変換
+
+// arrayやobjectもプロパティとして追加できる
+// objectにはそのデータを使って何かを行う関数も追加できる。
+// メソッドと呼ぶ
+const person = {
+  name: ["Bob", "Smith"],
+  namObj: {
+    first: "Bob",
+    last: "Smith",
+  },
+  age: 32,
+  bio() {
+    console.log(`${this.name[0]} ${this.name[1]} is ${this.age} years old.`);
+  },
+  introduceSelf() {
+    console.log(`Hi! I'm ${this.name[0]}.`);
+  },
+};
+
+person.name;
+person.name[0];
+person.age;
+person.bio();
+// "Bob Smith is 32 years old."
+person.introduceSelf();
+// "Hi! I'm Bob."
+console.log(person.namObj.first);
+console.log(person["namObj"]["first"]); //ブラケットver.
+
+person.farewell = function () {
+  console.log("Bye everybody!");
+};
+
+person.farewell();
+
+// コンストラクタ
+// オブジェクトを作るための設計図
+// 慣習的に大文字から始まる
+function Person(name) {
+  this.name = name;
+  this.introduceSelf = function () {
+    console.log(`Hi! I'm ${this.name}.`);
+  };
+}
+
+const salva = new Person("Salva");
+// new コンストラクタ => 新しい空のオブジェクトを作る
+
+/* これと一緒
+const salva = {
+  name: "Salva",
+
+  introduceSelf: function () {
+    console.log(`Hi! I'm ${this.name}.`);
+  },
+};
+*/
+salva.introduceSelf();
