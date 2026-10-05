@@ -147,6 +147,12 @@ Ai × フルスタックWeb開発を90日間学習する記録です。
 - for...in
 - コンストラクタ / new
 
+## day-20
+
+- Array Cardio Day 2
+- some / every / find / findIndex
+- スプレッド構文
+
 ## Tech Stack
 
 -HTML
