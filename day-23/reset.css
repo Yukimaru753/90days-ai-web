@@ -17,7 +17,11 @@ h1, h2, h3, h4, h5 {
   font-weight: inherit;
 }
 
-img {
+img, picture, video, canvas, svg {
   display: block;
-  max-inline-size: 100%;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
